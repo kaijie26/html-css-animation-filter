@@ -117,13 +117,49 @@
     border-radius: 20px;
     transform: scale(1.5);
 }
-
+/* Esercizio-10 */
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation10 1s infinite linear
+    
 }
+
+/* Soluzione ex-10 */
+@keyframes rotation10{
+    from{
+        transform: rotate(359deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+    
+}
+/* Esercizio-11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+/* Soluzione-11 */
+.ex-11-icon:hover{
+    animation: rotation11 2s infinite linear;
+
+}
+
+@keyframes rotation11{
+    0%{
+        transform: rotate(0deg);
+        
+    }
+
+    95%{
+        transform: rotate(300deg);
+    }
+ 
+    
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
